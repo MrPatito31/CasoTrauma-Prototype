@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&display=swap');
+
+*{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.izquierda{
+    display: flex;
+    justify-content: end;
+    height: 100vh;
+    width: 100%;
+    background: url(https://hospitaldemelipilla.cl/wp-content/uploads/2021/11/Foto14-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.derecha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 35%;
+    backdrop-filter: blur(5px);
+}
+
+#full{
+    display: flex;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    row-gap: 20px;
+}
+
+#login>h1{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: black;
+    margin: 0;
+}
+
+#login>h2{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    padding: 10px;
+    background: none;
+    border: none;
+    background: rgb(25,135,84);
+    border-radius: 10px;
+    color: #fff;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+button:hover{
+    background: rgb(19, 99, 62);
+}
+
+input{
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+input:focus{
+    border-color: #7aa4ff solid 2px;
+}
