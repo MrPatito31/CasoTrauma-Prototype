@@ -44,7 +44,7 @@ body{
     justify-content: center;
     font-size: xx-large;
     font-weight: bolder;
-    color: black;
+    color: white;
     margin: 0;
 }
 
@@ -77,8 +77,4 @@ input{
     outline: none;
     font-size: larger;
     font-weight: bolder;
-}
-
-input:focus{
-    border-color: #7aa4ff solid 2px;
 }
