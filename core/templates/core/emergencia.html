@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'emergencia.css' %}">
+    <title>Emergencias | R.R.E.M</title>
+</head>
+<body>
+    <header>
+        <h1> R.R.E.M </h1>
+    </header>
+
+    <section id="full">
+        <div id="izq">
+            <form action="{% url 'home' %}">
+                <button id="Bnav">Inicio</button>
+            </form>
+            <form action="{% url 'horario' %}">
+                <button id="Bnav">Horario</button>
+            </form>
+            <button id="Bnavo">Emergencias</button>
+            <form action="">
+                <button id="Bnav">Contacto</button>
+            </form>
+            
+            <div id="logout">
+                <form action="{% url 'login' %}">
+                    <button id="blogout">Salir</button>
+                </form>
+            </div>
+        </div>
+        <div id="dere">
+            <h2>Envio de Emergencias</h2>
+            <div id="contenidoE">
+                
+            </div>
+        </div>   
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Hospital R.R.E.M. Todos los derechos reservados.</p>
+    </footer>
+        
+</body>
+</html>

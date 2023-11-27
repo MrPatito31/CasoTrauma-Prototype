@@ -14,12 +14,20 @@
 
     <section id="full">
         <div id="izq">
-            <button id="Bnav">Inicio</button>
-            <button id="Bnav">Horario</button>
-            <button id="Bnav">Emergencias</button>
-            <button id="Bnav">Contacto</button>
+            <button id="Bnavo">Inicio</button>
+            <form action="{% url 'horario' %}">
+                <button id="Bnav">Horario</button>
+            </form>
+            <form action="{% url 'emergencia' %}">
+                <button id="Bnav">Emergencias</button>
+            </form>
+            <form action="">
+                <button id="Bnav">Contacto</button>
+            </form>
             <div id="logout">
-                <button id="blogout">Salir</button>
+                <form action="{% url 'login' %}">
+                    <button id="blogout">Salir</button>
+                </form>   
             </div>
         </div>
         <div id="dere">

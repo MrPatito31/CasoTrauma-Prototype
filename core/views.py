@@ -5,3 +5,9 @@ def home(request):
 
 def login(request):
     return render(request, 'core/login.html')
+
+def horario(request):
+    return render(request, 'core/horario.html')
+
+def emergencia(request):
+    return render(request, 'core/emergencia.html')

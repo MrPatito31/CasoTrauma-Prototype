@@ -45,17 +45,17 @@ form{
     border-radius: 10px;
 }
 
-#Bnav:hover{
-    background: #5a5a5a;
-    cursor: pointer;
-}
-
 #Bnavo{
     width: 80%;
     border: none;
     color: #fff;
     background: #5a5a5a;
     border-radius: 10px;
+}
+
+#Bnav:hover{
+    background: #5a5a5a;
+    cursor: pointer;
 }
 
 #dere{
@@ -90,7 +90,7 @@ h2{
     width: 100%;
 }
 
-#contenidoE{
+#contenidoH{
     display: flex;
     justify-content: center;
 }
