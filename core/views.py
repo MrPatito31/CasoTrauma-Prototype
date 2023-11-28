@@ -11,3 +11,6 @@ def horario(request):
 
 def emergencia(request):
     return render(request, 'core/emergencia.html')
+
+def register(request):
+    return render(request, 'core/register.html')
