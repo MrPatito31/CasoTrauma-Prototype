@@ -58,6 +58,30 @@ form{
     border-radius: 10px;
 }
 
+#Bsi{
+    width: 30px;
+    border: none;
+    color: #fff;
+    background: #28a745;
+    border-radius: 10px;
+}
+
+#Bsi:hover{
+    background: #218630;
+}
+
+#Bno{
+    width: 30px;
+    border: none;
+    color: #fff;
+    background: #dc3545;
+    border-radius: 10px;
+}
+
+#Bno:hover{
+    background: #86212b;
+}
+
 #dere{
     display: flex;
     flex-direction: column;
@@ -91,6 +115,11 @@ h2{
 }
 
 #contenidoE{
+    display: flex;
+    justify-content: center;
+}
+
+#Npa{
     display: flex;
     justify-content: center;
 }

@@ -90,9 +90,36 @@ h2{
     width: 100%;
 }
 
-#contenidoH{
+#contenidoE{
+    height: 80%;
     display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
     justify-content: center;
+}
+
+#Npaciente{
+    width: 150px;
+}
+
+#Context{
+    width: 80%;
+    resize: none;
+    border-color: #333;
+}
+
+#BE{
+    width: 200px;
+    border: none;
+    color: #fff;
+    background: #333;
+    border-radius: 10px;
+}
+
+#BE:hover{
+    background: #5a5a5a;
+    cursor: pointer;
 }
 
 footer{
