@@ -11,14 +11,16 @@
     <section id="full">
         <div class="izquierda">
             <div class="derecha">
-                <form id="login" action="" method="post">
-                {% csrf_token %}
-                <h1>R.R.E.M</h1>
-                <h2>Inicio de Sesion</h2>
-                <input id="usuario" type="text" placeholder="Usuario">
-                <input id="contrasena" type="password" placeholder="Contraseña">
-                <button>Iniciar Sesion</button>
-                <button>Registrarse</button>
+                <form id="login" method="post">
+                    {% csrf_token %}
+                    <h1>R.R.E.M</h1>
+                    <h2>Inicio de Sesion</h2>
+                    <input id="idusername" name="username" type="text" placeholder="Usuario">
+                    <input id="id_password" name="password" type="password" placeholder="Contraseña">
+                    <button>Iniciar Sesion</button>
+                </form>
+                <form id="register" action="{% url 'register' %}">
+                    <button>Registrarse</button>
                 </form>
             </div>
         </div>

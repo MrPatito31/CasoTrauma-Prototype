@@ -6,7 +6,10 @@
 
 header{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding-left: 20px;
+    padding-right: 20px;
     color: #fff;
     background-color: #4c315a;
 }
@@ -37,6 +40,42 @@ form{
     width: 100%;
 }
 
+#Npa{
+    text-align: center;
+}
+
+#Ntitle{
+    width: 10%;
+}
+
+#Ttitle{
+    width: 30%;
+}
+
+#option{
+    width: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
 #Bnav{
     width: 80%;
     border: none;
@@ -56,6 +95,14 @@ form{
     color: #fff;
     background: #5a5a5a;
     border-radius: 10px;
+}
+
+#si{
+    justify-content: center;
+}
+
+#no{
+    justify-content: center;
 }
 
 #Bsi{
@@ -115,11 +162,6 @@ h2{
 }
 
 #contenidoE{
-    display: flex;
-    justify-content: center;
-}
-
-#Npa{
     display: flex;
     justify-content: center;
 }

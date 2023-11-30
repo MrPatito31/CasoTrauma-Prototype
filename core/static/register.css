@@ -21,6 +21,8 @@ body{
 
 .derecha{
     display: flex;
+    flex-direction: column;
+    row-gap: 20px;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -37,6 +39,12 @@ body{
     flex-direction: column;
     width: 25rem;
     row-gap: 20px;
+}
+
+#register{
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
 }
 
 #login>h1{
@@ -72,21 +80,31 @@ button:hover{
     cursor: pointer;
 }
 
-#usuario{
+#username, #first_name, #last_name{
     border: 0;
     border: 2px solid #4c315a;
     border-radius: 10px;
-    background: #ffffff50;
+    background: #fff;
     padding: 10px;
     font-weight: 900;
     outline: none;
 }
 
-#contrasena{
+#email{
     border: 0;
     border: 2px solid #4c315a;
     border-radius: 10px;
-    background: #ffffff50;
+    background: #fff;
+    padding: 10px;
+    font-weight: 900;
+    outline: none;
+}
+
+#password2, #password1{
+    border: 0;
+    border: 2px solid #4c315a;
+    border-radius: 10px;
+    background: #fff;
     padding: 10px;
     font-weight: 900;
     outline: none;

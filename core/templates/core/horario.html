@@ -10,6 +10,9 @@
 <body>
     <header>
         <h1> R.R.E.M </h1>
+        {% if user.is_authenticated %}
+            <h3>Usuario: {{user.username}}</h3>
+        {% endif %}
     </header>
 
     <section id="full">
@@ -25,7 +28,7 @@
                 <button id="Bnav">Contacto</button>
             </form>
             <div id="logout">
-                <form action="{% url 'login' %}">
+                <form action="{% url 'logout' %}">
                     <button id="blogout">Salir</button>
                 </form>
             </div>

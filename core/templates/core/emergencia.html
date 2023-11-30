@@ -10,6 +10,9 @@
 <body>
     <header>
         <h1> R.R.E.M </h1>
+        {% if user.is_authenticated %}
+            <h3>Usuario: {{user.username}}</h3>
+        {% endif %}
     </header>
 
     <section id="full">
@@ -26,7 +29,7 @@
             </form>
             
             <div id="logout">
-                <form action="{% url 'login' %}">
+                <form action="{% url 'logout' %}">
                     <button id="blogout">Salir</button>
                 </form>
             </div>
@@ -34,9 +37,25 @@
         <div id="dere">
             <h2>Envio de Emergencias</h2>
             <div id="contenidoE">
-                <input id="Npaciente" type="number" placeholder="Numero de Pacientes">
-                <textarea id="Context" cols="40" rows="10" placeholder="Contexto de la Emergencia"></textarea>
-                <button id="BE">Enviar Emergencia</button>
+                <form id="contenidoE" action="{% url 'enviar_emergencia' %}" method="POST">
+
+                    {% if r2 %}
+                        <div>
+                            <h4>{{ r2 }}</h4>
+                        </div>
+                    {% endif %}
+
+                    {% if r %}
+                        <div>
+                            <h4>{{ r }}</h4>
+                        </div>
+                    {% endif %}
+
+                    {% csrf_token %}
+                    <input id="Npaciente" name="Npaciente" type="number" placeholder="Numero de Pacientes">
+                    <textarea id="Context" name="Context" cols="40" rows="10" placeholder="Contexto de la Emergencia"></textarea>
+                    <button type="submit" id="BE">Enviar Emergencia</button>
+                </form>
             </div>
         </div>   
     </section>

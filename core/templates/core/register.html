@@ -11,15 +11,23 @@
     <section id="full">
         <div class="izquierda">
             <div class="derecha">
-                <div id="login">
-                <h1>R.R.E.M</h1>
-                <h2>Registro</h2>
-                <input id="usuario" type="text" placeholder="Usuario">
-                <input id="contrasena" type="password" placeholder="Contraseña">
-                <button>Registrarse</button>
-                <button>Volver Atras</button>
-                </div>
+                <form id="login" method="POST">
+                    {% csrf_token %}
+                    <h1>R.R.E.M</h1>
+                    <h2>Registro</h2>
+                    <input id="username" name="username" type="text" placeholder="Usuario">
+                    <input id="first_name" name="first_name" type="text" placeholder="Nombre">
+                    <input id="last_name" name="last_name" type="text" placeholder="Apellido">
+                    <input id="email" name="email" type="text" placeholder="Correo">
+                    <input id="password1" name="password1" type="password" placeholder="Contraseña">
+                    <input id="password2" name="password2" type="password" placeholder="Confirma Contraseña">
+                    <button type="submit">Registrarse</button>
+                </form>
+                <form id="register" action="{% url 'login' %}">
+                <button>Volver Atrás</button>
+            </form>
             </div>
+            
         </div>
     </section>
 </body>
